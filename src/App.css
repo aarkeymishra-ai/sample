@@ -1,0 +1,111 @@
+section {
+  position: relative;
+}
+
+#center {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 56px 24px 0;
+}
+
+.hero {
+  position: relative;
+  width: 176px;
+  height: 179px;
+}
+
+.hero .base {
+  position: absolute;
+  width: 170px;
+  height: 179px;
+  left: 3px;
+  top: 0;
+  z-index: 1;
+}
+
+.hero .framework {
+  position: absolute;
+  width: 119px;
+  height: 104px;
+  left: 29px;
+  top: 48px;
+  z-index: 2;
+}
+
+.hero .vite {
+  position: absolute;
+  width: 119px;
+  height: 104px;
+  left: 29px;
+  top: 48px;
+  z-index: 3;
+}
+
+.ticks {
+  background-image: linear-gradient(to right, var(--border) 1px, transparent 1px);
+  background-size: 40px 40px;
+  height: 160px;
+  mask-image: linear-gradient(to bottom, transparent, black 20px, black calc(100% - 20px), transparent);
+}
+
+#next-steps {
+  display: flex;
+  gap: 24px;
+  padding: 0 48px;
+}
+
+#next-steps h2 {
+  margin: 0 0 12px;
+}
+
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#next-steps a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#next-steps a:hover {
+  text-decoration: underline;
+}
+
+#next-steps .icon {
+  width: 21px;
+  height: 20px;
+}
+
+#next-steps .button-icon {
+  width: 16px;
+  height: 16px;
+}
+
+#docs,
+#social {
+  background: var(--social-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  flex: 1;
+}
+
+#spacer {
+  height: 40px;
+}
+
+@media (max-width: 1024px) {
+  #next-steps {
+    flex-direction: column;
+    padding: 0 24px;
+  }
+}
